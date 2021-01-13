@@ -11,6 +11,7 @@
     "docker:local.prd": "chmod +x ./docker-run.sh && bash ./docker-run.sh local:prd",
     "docker:hub.dev": "chmod +x ./docker-run.sh && bash ./docker-run.sh hub:dev",
     "docker:hub.prd": "chmod +x ./docker-run.sh && bash ./docker-run.sh hub:prd",
+    "test:docker": "bash ./docker-test.sh",
     "test": "jest"
   },
   "dependencies": {
