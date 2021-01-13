@@ -90,3 +90,4 @@ sw.*
 *.swp
 
 heroku-deploy-output.txt
+azure-deploy.sh
