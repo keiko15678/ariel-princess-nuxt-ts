@@ -17,6 +17,16 @@ $ npm run start
 $ npm run generate
 ```
 
+## Containerization Environment Setup
+
+```bash
+# download & install Docker (official)
+$ ./docker-install.sh
+
+# download & install WSL Linux Subsystem Kernel
+$ ./wsl-install.sh
+```
+
 ## Containerization & Deployment
 
 ```bash
