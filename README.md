@@ -4,7 +4,7 @@
 
 - Typescript via 'nuxt-property-decorators'
 - NuxtJS
-- Scss
+- Sass
 - Docker
 
 ## CI/CD Supports
