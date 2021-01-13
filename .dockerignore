@@ -13,3 +13,5 @@ heroku-deploy.sh
 heroku-deploy-output.txt
 wsl-download.vbs
 wsl-install.sh
+azure-deploy.sh
+azure-push.sh
