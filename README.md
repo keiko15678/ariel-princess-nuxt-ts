@@ -57,6 +57,9 @@ $ npm run docker:hub.prd
 
 # local Docker build and run test
 $ npm run docker:test
+
+# deploy to Heroku
+$ npm run heroku
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).

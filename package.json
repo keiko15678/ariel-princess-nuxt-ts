@@ -12,7 +12,8 @@
     "docker:local.prd": "chmod +x ./docker-run.sh && bash ./docker-run.sh local:prd",
     "docker:hub.dev": "chmod +x ./docker-run.sh && bash ./docker-run.sh hub:dev",
     "docker:hub.prd": "chmod +x ./docker-run.sh && bash ./docker-run.sh hub:prd",
-    "docker:test": "bash ./docker-test.sh"
+    "docker:test": "bash ./docker-test.sh",
+    "heroku": "bash ./heroku-deploy.sh"
   },
   "dependencies": {
     "@nuxt/typescript-runtime": "^2.0.0",
