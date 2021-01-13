@@ -1,5 +1,18 @@
 # nuxt-ts-docker-template
 
+## Stack
+
+- Typescript via 'nuxt-property-decorators'
+- NuxtJS
+- Scss
+- Docker
+
+## CI/CD Supports
+
+- Github Actions
+- Dockerhub
+- Heroku via Dockerhub
+
 ## Build Setup
 
 ```bash
