@@ -4,8 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "nuxt-ts",
-    "build": "cross-env NUXT_HOST=0.0.0.0 NUXT_PORT=3000 nuxt-ts build",
-    "start": "cross-env NUXT_HOST=0.0.0.0 NUXT_PORT=3000 nuxt-ts start",
+    "build": "cross-env nuxt-ts build",
+    "build:bind": "cross-env NUXT_PORT=3000 NUXT_HOST=0.0.0.0 nuxt-ts build",
+    "start": "cross-env nuxt-ts start",
+    "start:bind": "cross-env NUXT_PORT=3000 NUXT_HOST=0.0.0.0 nuxt-ts start",
     "generate": "cross-env NUXT_HOST=0.0.0.0 NUXT_PORT=3000 nuxt-ts generate",
     "test": "jest",
     "docker:local.dev": "chmod +x ./docker-run.sh && bash ./docker-run.sh local:dev",
