@@ -7,12 +7,12 @@
     "build": "cross-env NUXT_HOST=0.0.0.0 NUXT_PORT=3000 nuxt-ts build",
     "start": "cross-env NUXT_HOST=0.0.0.0 NUXT_PORT=3000 nuxt-ts start",
     "generate": "cross-env NUXT_HOST=0.0.0.0 NUXT_PORT=3000 nuxt-ts generate",
+    "test": "jest",
     "docker:local.dev": "chmod +x ./docker-run.sh && bash ./docker-run.sh local:dev",
     "docker:local.prd": "chmod +x ./docker-run.sh && bash ./docker-run.sh local:prd",
     "docker:hub.dev": "chmod +x ./docker-run.sh && bash ./docker-run.sh hub:dev",
     "docker:hub.prd": "chmod +x ./docker-run.sh && bash ./docker-run.sh hub:prd",
-    "test:docker": "bash ./docker-test.sh",
-    "test": "jest"
+    "docker:test": "bash ./docker-test.sh"
   },
   "dependencies": {
     "@nuxt/typescript-runtime": "^2.0.0",
