@@ -2,3 +2,14 @@
 node_modules
 .nuxt
 dist
+docker-build-local.sh
+docker-build-push.sh
+docker-download.vbs
+docker-install.sh
+docker-run.sh
+docker-test.sh
+dockerhub-push.sh
+heroku-deploy.sh
+heroku-deploy-output.txt
+wsl-download.vbs
+wsl-install.sh
