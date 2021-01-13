@@ -6,11 +6,11 @@ DOCKER_DEV_FILE_PATH=Dockerfile.dev
 DOCKER_PRD_FILE_PATH=Dockerfile
 
 if [ "$1" = "local:dev" ]; then
-  FILE_PATH=./docker-build-local.sh
+  FILE_PATH=./docker-build-run.sh
   chmod +x $FILE_PATH
   $FILE_PATH $DOCKER_IMAGE_NAME $DOCKER_DEV_FILE_PATH
 elif [ "$1" = "local:prd" ]; then
-  FILE_PATH=./docker-build-local.sh
+  FILE_PATH=./docker-build-run.sh
   chmod +x $FILE_PATH
   $FILE_PATH $DOCKER_IMAGE_NAME $DOCKER_PRD_FILE_PATH
 elif [ "$1" = "hub:dev" ]; then
