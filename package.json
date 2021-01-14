@@ -16,7 +16,8 @@
     "docker:hub.prd": "chmod +x ./docker-run.sh && bash ./docker-run.sh hub:prd",
     "docker:test": "bash ./docker-test.sh",
     "heroku": "bash ./heroku-deploy.sh",
-    "azure": "bash ./azure-deploy.sh"
+    "azure": "bash ./azure-deploy.sh",
+    "azure:blob": "bash ./azure-deploy.sh"
   },
   "dependencies": {
     "@nuxt/typescript-runtime": "^2.0.0",

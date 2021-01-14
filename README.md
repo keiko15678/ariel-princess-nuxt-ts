@@ -80,6 +80,9 @@ $ ./azure-setup-as.sh 'resource-group' 'virtual-network-name' 'subnet-name' 'app
 
 # deploy to Azure App Service via Azure Container Registy (requires azure configuration)
 $ npm run azure
+
+# deploy files in 'static' folder to Azure Blob Storage
+$ npm run azure:blob
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
