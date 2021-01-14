@@ -1,5 +1,6 @@
 import { Module, VuexModule, Action, Mutation } from 'vuex-module-decorators'
 import { $axios } from '~/utils/api'
+import { determineStaticAssetsPath } from '~/utils/static'
 
 @Module({
   name: 'data',
@@ -12,9 +13,16 @@ export default class DataModule extends VuexModule {
     property: '',
   }
 
+  public staticPrefix: string = ''
+
   @Mutation
   private setData(payload: string) {
     this.data.property = payload
+  }
+
+  @Mutation 
+  public setStaticPrefix() {
+    this.staticPrefix = determineStaticAssetsPath()
   }
 
   @Action({ commit: 'setData' })
