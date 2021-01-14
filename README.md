@@ -12,7 +12,7 @@
 - Github Actions (static) https://keiko15678.github.io/nuxt-ts-docker-template/
 - Dockerhub https://hub.docker.com/layers/keiko15678/ire/nuxt-ts-docker-template/images/sha256-28b3018be241842bb61bb0300df9f35b2588c296d16f346fff5ae91cb36a3f2c?context=explore
 - Heroku via Dockerhub
-- Azure via Azure Container Registry & Azure App Service
+- Azure via Azure Container Registry & Azure App Service, static files upload at Azure Storage Account
 
 ## Build Setup
 
