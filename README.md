@@ -31,6 +31,16 @@ $ npm run start
 $ npm run generate
 ```
 
+## Local Environment Setup
+
+```bash
+# install Docker locally
+$ ./docker-install.sh
+
+# install Docker WSL Kernel (Windows Linux Subsystem)
+$ ./wsl-install.sh
+```
+
 ## Containerization Environment Setup
 
 ```bash
@@ -59,8 +69,17 @@ $ npm run docker:hub.prd
 # local Docker build and run test
 $ npm run docker:test
 
-# deploy to Heroku
+# deploy to Heroku via Dockerhub
 $ npm run heroku
+
+# setup Azure Resource Group
+$ ./azure-setup-rg.sh 'location' 'name' 'subscription'
+
+# setup Azure App Service
+$ ./azure-setup-as.sh 'resource-group' 'virtual-network-name' 'subnet-name' 'app-service-name'
+
+# deploy to Azure App Service via Azure Container Registy (requires azure configuration)
+$ npm run azure
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
