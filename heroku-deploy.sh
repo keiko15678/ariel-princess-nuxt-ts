@@ -5,7 +5,7 @@ HEROKU_APP_NAME=heroku-app-name
 HEROKU_APP_TYPE=web
 
 DOCKER_REMOTE_ADDR=docker-remote-address
-DOCKER_FILE_PATH=Dockerfile
+DOCKER_FILE_PATH=Dockerfile.heroku
 
 $HEROKU_API_KEY heroku container:login
 
