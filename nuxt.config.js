@@ -38,6 +38,7 @@ export default {
   build: {},
   env: {
     API_URL: process.env.NUXT_ENV_API_URL || 'http://localhost:8080',
+    BLOB_URL: process.env.NUXT_ENV_BLOB_URL || 'http://localhost:3000',
     TIMEOUT_LIMIT: process.env.NUXT_ENV_TIMEOUT_LIMIT,
   },
 }
