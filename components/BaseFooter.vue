@@ -81,7 +81,7 @@ export default class BaseFooter extends Vue {
         align-items: center;
         font-size: $fzM;
         color: $darken;
-        margin-bottom: $spacingSM;
+        margin-bottom: $spacingM;
         &:before {
           content: '';
           display: block;
