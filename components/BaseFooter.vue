@@ -1,30 +1,37 @@
 <template>
   <footer class="footer">
-    <div class="footer__content">
-      <div class="footer__contentTitle">聯絡我 Inquiries</div>
-      <div class="footer__contentBody">
-        <div class="footer__contentBodyItem">
-          Email&nbsp;&nbsp;
-          <a :href="`mailto:${content.email}`">{{ content.email }}</a>
-        </div>
-        <div class="footer__contentBodyItem">
-          Phone&nbsp;&nbsp;
-          <span>{{content.phone}}</span>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="footer__content">
+            <div class="footer__contentTitle">聯絡我 Inquiries</div>
+            <div class="footer__contentBody">
+              <div class="footer__contentBodyItem">
+                Email&nbsp;&nbsp;
+                <a :href="`mailto:${content.email}`">{{ content.email }}</a>
+              </div>
+              <div class="footer__contentBodyItem">
+                Phone&nbsp;&nbsp;
+                <span>{{content.phone}}</span>
+              </div>
+            </div>
+            <div class="footer__contentTitle">網站地圖 Site Map</div>
+            <div class="footer__contentBody">
+              <div
+                class="footer__contentBodyItem"
+                v-for="item in siteMap" :key="item.id"
+                v-show="item.showFooter"
+                @click="$emit('footer-site-map-click', item.id)"
+              >
+                <span>{{ item.footerText }}</span>
+              </div>
+            </div>
+            <div class="footer__contentFooter" v-html="crText"></div>
+          </div>
         </div>
       </div>
-      <div class="footer__contentTitle">網站地圖 Site Map</div>
-      <div class="footer__contentBody">
-        <div
-          class="footer__contentBodyItem"
-          v-for="item in siteMap" :key="item.id"
-          v-show="item.showFooter"
-          @click="$emit('footer-site-map-click', item.id)"
-        >
-          <span>{{ item.footerText }}</span>
-        </div>
-      </div>
-      <div class="footer__contentFooter" v-html="crText"></div>
     </div>
+
   </footer>
 </template>
 
@@ -52,12 +59,12 @@ export default class BaseFooter extends Vue {
   height: auto;
   overflow: hidden;
   background-color: $lighten;
-  padding-left: $spacingML;
-  padding-right: $spacingML;
   padding-top: $spacingL;
   padding-bottom: $spacingXXL;
   &__content {
     position: relative;
+    padding-left: $spacingML;
+    padding-right: $spacingML;
     &Title {
       display: flex;
       color: $secondary;
