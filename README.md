@@ -1,4 +1,4 @@
-# nuxt-ts-docker-template
+# ariel-princess-client
 
 ## Stack
 
