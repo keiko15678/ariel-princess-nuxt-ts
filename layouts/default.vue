@@ -62,19 +62,27 @@ export default class Default extends Vue {
     this.tabClicked = !this.tabClicked
   }
 
+  private routeAndTabUpdate(tab: number): void {
+    this.currentTab = tab
+    const url: string = this.siteMap.find((item: any) => item.id === tab).url
+    this.$router.push(url)
+  }
+
   private handleTabItemClick(tab: number): void {
     window.localStorage.setItem('t', tab.toString())
-    this.currentTab = tab
-    const url: string = this.siteMap.find((item: any) => item.id === this.currentTab).url
-    this.$router.push(url)
+    this.routeAndTabUpdate(tab)
     this.handleTabClick()
   }
 
   private mounted(): void {
-    const tab = window.localStorage.getItem('t')
-    if(tab && !isNaN(Number(tab))) {
-      this.currentTab = Number(tab)
-    }
+    this.$nextTick(() => {
+      this.$nuxt.$loading.start()
+      const tab = window.localStorage.getItem('t')
+      if(tab && !isNaN(Number(tab))) {
+        this.routeAndTabUpdate(Number(tab))
+      }
+      this.$nuxt.$loading.finish()
+    })
   }
 }
 </script>

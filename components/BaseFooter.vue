@@ -51,7 +51,7 @@ export default class BaseFooter extends Vue {
 .footer {
   height: auto;
   overflow: hidden;
-  background-color: $primary;
+  background-color: $lighten;
   padding-left: $spacingML;
   padding-right: $spacingML;
   padding-top: $spacingL;
@@ -60,7 +60,7 @@ export default class BaseFooter extends Vue {
     position: relative;
     &Title {
       display: flex;
-      color: $lighten;
+      color: $secondary;
       letter-spacing: $letterSpacing;
       margin-bottom: $spacingM;
       font-size: $fzM;
@@ -80,22 +80,22 @@ export default class BaseFooter extends Vue {
         display: flex;
         align-items: center;
         font-size: $fzSM;
-        color: $grey2;
+        color: $darken;
         margin-bottom: $spacingSM;
         &:before {
           content: '';
           display: block;
           width: 4px;
           height: 4px;
-          background-color: $warning;
+          background-color: $successDark;
           margin-right: 8px;
         }
         >span, a {
           text-decoration: underline;
           cursor: pointer;
-          color: $grey1;
+          color: $contrast;
           &:visited {
-            color: $grey1;
+            color: $contrast;
           }
         }
       }
