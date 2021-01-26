@@ -22,7 +22,7 @@
         </div>
       </div>
     </div>
-    <BaseFooter :crText="crText" v-show="!tabClicked" :siteMap="siteMap" @footer-site-map-click="()=>{}" />
+    <BaseFooter :crText="crText" v-show="!tabClicked" :siteMap="siteMap" @footer-site-map-click="routeAndTabUpdate" />
   </div>
 </template>
 
