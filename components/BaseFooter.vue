@@ -9,7 +9,7 @@
         </div>
         <div class="footer__contentBodyItem">
           #&nbsp;
-          <span>0900000000</span>
+          <span>{{content.phone}}</span>
         </div>
       </div>
       <div class="footer__contentTitle">網站地圖 Site Map</div>
@@ -39,7 +39,8 @@ export default class BaseFooter extends Vue {
   @Prop() readonly siteMap!: Array<any>
 
   private content: any = {
-    email: 'example@gmail.com'
+    email: 'example@gmail.com',
+    phone: '0900000000'
   }
 }
 </script>

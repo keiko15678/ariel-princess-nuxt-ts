@@ -1,6 +1,7 @@
 // $primary: #E8B4B8;
 $primary: #B042B3;
 $secondary: #A49393;
+$secondaryLight: rgba($color: $secondary, $alpha: .55);
 $contrast: #67595E;
 $lighten: #EED6D3;
 $lighten2: #E8B4B8;
@@ -47,6 +48,7 @@ $spacingXXL: 1.75rem;
 
 $fzS: .5rem;
 $fzSM: .75rem;
+$fzSMM: .85rem;
 $fzM: 1rem;
 $fzML: 1.25rem;
 $fzL: 1.5rem;

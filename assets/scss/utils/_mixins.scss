@@ -1,0 +1,25 @@
+@mixin squareBeforeText($color, $height, $width) {
+  display: flex;
+  align-items: center;
+  &:before {
+    content: '';
+    display: block;
+    width: $width;
+    height: $height;
+    background-color: $color;
+    margin-right: 8px;
+  }
+}
+
+@mixin barBeforeText($color, $height, $width) {
+  display: flex;
+  &:before {
+    content: '';
+    display: block;
+    width: $width;
+    height: $height;
+    margin-top: $height * .25;
+    margin-right: 6px;
+    background-color: $color;
+  }
+}
