@@ -4,11 +4,11 @@
       <div class="footer__contentTitle">聯絡我 Inquiries</div>
       <div class="footer__contentBody">
         <div class="footer__contentBodyItem">
-          Email&nbsp;
+          Email&nbsp;&nbsp;
           <a :href="`mailto:${content.email}`">{{ content.email }}</a>
         </div>
         <div class="footer__contentBodyItem">
-          #&nbsp;
+          Phone&nbsp;&nbsp;
           <span>{{content.phone}}</span>
         </div>
       </div>
@@ -49,12 +49,11 @@ export default class BaseFooter extends Vue {
 @import '~/assets/scss/main';
 
 .footer {
-  width: 100vw;
   height: auto;
   overflow: hidden;
   background-color: $primary;
-  padding-left: $spacingM;
-  padding-right: $spacingM;
+  padding-left: $spacingML;
+  padding-right: $spacingML;
   padding-top: $spacingL;
   padding-bottom: $spacingXXL;
   &__content {

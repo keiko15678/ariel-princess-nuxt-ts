@@ -1,16 +1,19 @@
 <template>
   <aside class="aside" :style="{ width: tabClicked ? '100vw' : '0' }">
-    <div class="aside__content" v-show="tabClicked">
-      <div class="aside__top">
-        <div class="aside__topLogo" @click="$emit('tab-click')"></div>
+    <transition name="fade">
+      <div class="aside__content" v-show="tabClicked">
+        <div class="aside__top">
+          <div class="aside__topLogo" @click="$emit('tab-click')"></div>
+        </div>
+        <div class="aside__list">
+          <div class="aside__listItem" @click="$emit('tab-item-click', item.id)" v-for="item in siteMap" :key="item.id">{{ item.text }}</div>
+        </div>
+        <div class="aside__footer">
+          <div class="aside__footerContent" v-html="crText"></div>
+        </div>
+        <div class="aside__logo"></div>
       </div>
-      <div class="aside__list">
-        <div class="aside__listItem" @click="$emit('tab-item-click', item.id)" v-for="item in siteMap" :key="item.id">{{ item.text }}</div>
-      </div>
-      <div class="aside__footer">
-        <div class="aside__footerContent" v-html="crText"></div>
-      </div>
-    </div>
+    </transition>
   </aside>
 </template>
 
@@ -32,7 +35,7 @@ export default class BaseMenu extends Vue {
 @import '~/assets/scss/main';
 
 .aside {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 100;
@@ -45,17 +48,17 @@ export default class BaseMenu extends Vue {
     position: relative;
     width: 80vw;
     height: 100vh;
-    background-color: rgba($color: $white, $alpha: .95);
+    // background-color: rgba($color: $white, $alpha: .95);
+    background-color: $white;
   }
   &__top {
     padding-top: $spacingM;
     padding-bottom: $spacingM;
-    margin-right: $spacingM;
-    border-bottom: 2px dashed $contrast;
+    background-color: $lighten2;
     &Logo {
       margin-left: $spacingM;
-      width: 32px;
-      height: 32px;
+      width: 34px;
+      height: 34px;
       background-size: contain;
       background-position: center center;
       background-repeat: no-repeat;
@@ -88,6 +91,17 @@ export default class BaseMenu extends Vue {
       color: $contrast;
       font-size: $fzS;
     }
+  }
+  &__logo {
+    position: absolute;
+    bottom: 12px + 16px;
+    right: $spacingM;
+    width: $headerHeight + 30px;
+    height: $headerHeight + 30px;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url(/logo_header.jpg);
   }
 }
 </style>

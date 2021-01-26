@@ -88,6 +88,6 @@ export default class Default extends Vue {
   padding-left: $spacingML;
   padding-right: $spacingML;
   padding-top: $spacingML;
-  padding-bottom: $spacingML;
+  padding-bottom: 48px;
 }
 </style>

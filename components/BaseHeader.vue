@@ -33,7 +33,8 @@ export default class BaseHeader extends Vue {
 .header {
   width: 100vw;
   height: $headerHeight;
-  background-color: $primary;
+  border-bottom: 1px solid $lighten2;
+  background-color: $white;
   &__content {
     position: relative;
     display: flex;
@@ -65,7 +66,7 @@ export default class BaseHeader extends Vue {
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
-    background-image: url(/logo_header_invert.jpg);
+    background-image: url(/logo_header.jpg);
   }
 }
 </style>
