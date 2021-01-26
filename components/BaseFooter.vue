@@ -79,7 +79,7 @@ export default class BaseFooter extends Vue {
       &Item {
         display: flex;
         align-items: center;
-        font-size: $fzSM;
+        font-size: $fzM;
         color: $darken;
         margin-bottom: $spacingSM;
         &:before {
@@ -104,7 +104,7 @@ export default class BaseFooter extends Vue {
       position: absolute;
       right: 0;
       width: inherit;
-      color: $grey3;
+      color: $grey4;
       font-size: $fzS;
     }
   }
