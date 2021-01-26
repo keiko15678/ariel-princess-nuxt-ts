@@ -59,8 +59,8 @@ export default class BaseMenu extends Vue {
       margin-left: $spacingM;
       width: 34px;
       height: 34px;
-      width: $headerHeight - 24px;
-      height: $headerHeight - 24px;
+      width: $headerHeight - 24px + 1px;
+      height: $headerHeight - 24px + 1px;
       background-size: contain;
       background-position: center center;
       background-repeat: no-repeat;
