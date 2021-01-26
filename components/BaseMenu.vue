@@ -59,6 +59,8 @@ export default class BaseMenu extends Vue {
       margin-left: $spacingM;
       width: 34px;
       height: 34px;
+      width: $headerHeight - 24px;
+      height: $headerHeight - 24px;
       background-size: contain;
       background-position: center center;
       background-repeat: no-repeat;
@@ -70,12 +72,13 @@ export default class BaseMenu extends Vue {
     &Item {
       padding-top: $spacingL;
       padding-left: $spacingL;
-      padding-bottom: $spacingML;
+      padding-bottom: $spacingL;
       margin-right: $spacingM;
       border-bottom: 1px dashed $contrast;
       color: $lighten;
       letter-spacing: $letterSpacing;
       font-weight: bold;
+      font-size: $fzM;
       cursor: pointer;
     }
   }

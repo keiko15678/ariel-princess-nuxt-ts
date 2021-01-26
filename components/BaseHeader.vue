@@ -40,7 +40,6 @@ export default class BaseHeader extends Vue {
     display: flex;
     width: 100vw;
     justify-content: start;
-    margin-top: 5px;
     padding-left: $spacingM;
     padding-right: $spacingM;
     display: flex;
@@ -61,8 +60,8 @@ export default class BaseHeader extends Vue {
   &__logo {
     margin-left: auto;
     margin-right: auto;
-    width: $headerHeight - 10px;
-    height: $headerHeight - 10px;
+    width: $headerHeight;
+    height: $headerHeight;
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;

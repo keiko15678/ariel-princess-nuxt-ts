@@ -1,19 +1,21 @@
-// $primary: #E8B4B8;
-$primary: #B042B3;
-$secondary: #A49393;
-$secondaryLight: rgba($color: $secondary, $alpha: .55);
-$contrast: #67595E;
-$lighten: #EED6D3;
-$lighten2: #E8B4B8;
+$primary: #b042b3;
+$secondary: #a49393;
+$secondaryLight: rgba(
+  $color: $secondary,
+  $alpha: 0.55
+);
+$contrast: #67595e;
+$lighten: #eed6d3;
+$lighten2: #e8b4b8;
 $darken: #393939;
 $darken2: #1b1b1b;
 $white: #fff;
 $black: #000;
 
-$success: #B4F8C8;
-$warning: #FBE7C6;
-$danger: #FFAEBC;
-$info: #A0E7E5;
+$success: #b4f8c8;
+$warning: #fbe7c6;
+$danger: #ffaebc;
+$info: #a0e7e5;
 
 $successDark: #6d9053;
 $warningDark: #f5b537;
@@ -34,21 +36,21 @@ $grey6: #555555;
 $dialogRadius: 12px;
 $btnRadius: 4px;
 
-$headerHeight: 58px;
+$headerHeight: 68px;
 
 $letterSpacing: 1.25px;
 
-$spacingS: .25rem;
-$spacingSM: .5rem;
-$spacingM: .75rem;
+$spacingS: 0.25rem;
+$spacingSM: 0.5rem;
+$spacingM: 0.75rem;
 $spacingML: 1rem;
 $spacingL: 1.25rem;
 $spacingXL: 1.5rem;
 $spacingXXL: 1.75rem;
 
-$fzS: .5rem;
-$fzSM: .75rem;
-$fzSMM: .85rem;
+$fzS: 0.5rem;
+$fzSM: 0.75rem;
+$fzSMM: 0.85rem;
 $fzM: 1rem;
 $fzML: 1.25rem;
 $fzL: 1.5rem;

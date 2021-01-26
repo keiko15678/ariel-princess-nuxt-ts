@@ -49,8 +49,9 @@ export default class Default extends Vue {
 
   private siteMap: Array<any> = [
     { id: 0, url: '/', text: '關於我 About', title: '簡介 Introduction', footerText: 'About', showFooter: true },
-    { id: 1, url: '/contact', text: '聯絡我 Inquiries', title:'聯絡方式 Contacts', footerText: 'Inquiries', showFooter: true },
-    { id: 2, url: '/link', text: '連結 External Links', title:'我的連結 Network', footerText: 'External Links', showFooter: true }
+    { id: 1, url: '/contact', text: '聯絡我 Inquiries', title:'聯絡方式 Connections', footerText: 'Inquiries', showFooter: true },
+    // { id: 2, url: '/link', text: '連結 Links', title:'我的連結 Network', footerText: 'External Links', showFooter: true },
+    { id: 2, url: '/album', text: '相簿 Album', title:'照片 Photos', footerText: 'Album', showFooter: true }
   ]
 
   private get getPageTitle(): string {
